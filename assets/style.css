@@ -96,3 +96,22 @@ h2{
     margin-bottom: 20px;
     font-size: 18px;
 }
+
+.socials{
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+
+.fa-brands{
+    padding: 20px;
+    transition: filter 0.1s ease;
+}
+
+.fa-instagram{
+    margin-right: 30px;
+}
+
+.fa-brands:hover{
+    filter: invert(0.4);
+}
