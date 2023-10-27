@@ -628,3 +628,54 @@ input:focus, textarea:focus{
     pointer-events: auto;
 }
 
+.main-heading{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    width: 100%;
+    top: 180px;
+}
+
+.contact{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    background-image: url("../photos_1/sarah-dorweiler-2s9aHF4eCjI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.physical-details{
+    min-width: 250px;
+    background-color: rgb(85, 112, 85);
+    border-radius: 5px;
+    position: absolute;
+    left: 400px;
+    z-index: 99;
+}
+
+.detail{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+h4{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 0.7rem;
+}
+
+i{
+    margin-right: 20px;
+}
