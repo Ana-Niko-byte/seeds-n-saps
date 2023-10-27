@@ -232,10 +232,48 @@ p.plants{
     margin: 15px;
 }
 
+.background-care{
+    background-image: url("./img/plant-wall-background.avif");
+    height: 500px;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headings{
+    text-align: center;
+}
+
 footer{
     background-color: var(--darkgrey);
     color: white;
     padding: 30px;
+}
+
+.problem-intro{
+    display: flex;
+    align-items: center;
+}
+
+#problem-span{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#problems-image{
+    height: 500px;
+    border: 10px solid white;
+    border-radius: 20px;
+    position: relative;
+    bottom: 60px;
+}
+
+h1 .problem, h2 .problem, h3 .problem{
+    color: var(--darkgrey);
+    margin: 5px 0;
 }
 
 .copyright{
