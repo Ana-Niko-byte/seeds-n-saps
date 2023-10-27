@@ -349,3 +349,13 @@ h3 .problem{
     color:var(--darkgrey);
     font-size: 14px;
 }
+
+.common_problems{
+    background-image: url("./img/long-grass-background.jpeg");
+    background-position: center;
+    background-size: cover;
+    padding: 50px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
