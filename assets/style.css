@@ -59,8 +59,8 @@ a:active{
 }
 
 .header{
-    background-color: var(--darkgreen);
     background-image: url("./img/cacti-cover.webp");
+    background-color: var(--darkgreen);
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,6 +125,7 @@ h2{
 
 .about_background{
     background-image: url("./img/full-green.avif");
+    background-color: var(--darkgreen);
     border-bottom: 5px solid black;
     border-top: 5px solid black;
     background-position: center;
@@ -275,6 +276,7 @@ footer{
 
 .background-care{
     background-image: url("./img/plant-wall-background.avif");
+    background-color: var(--lightgreen);
     height: 500px;
     background-size: cover;
     background-position: right;
@@ -352,6 +354,7 @@ h3 .problem{
 
 .common_problems{
     background-image: url("./img/long-grass-background.jpeg");
+    background-color: var(--lightgreen);
     background-position: center;
     background-size: cover;
     padding: 50px 30px;
