@@ -232,48 +232,10 @@ p.plants{
     margin: 15px;
 }
 
-.background-care{
-    background-image: url("./img/plant-wall-background.avif");
-    height: 500px;
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.headings{
-    text-align: center;
-}
-
 footer{
     background-color: var(--darkgrey);
     color: white;
     padding: 30px;
-}
-
-.problem-intro{
-    display: flex;
-    align-items: center;
-}
-
-#problem-span{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#problems-image{
-    height: 500px;
-    border: 10px solid white;
-    border-radius: 20px;
-    position: relative;
-    bottom: 60px;
-}
-
-h1 .problem, h2 .problem, h3 .problem{
-    color: var(--darkgrey);
-    margin: 5px 0;
 }
 
 .copyright{
@@ -309,4 +271,81 @@ h1 .problem, h2 .problem, h3 .problem{
 
 .links a{
     margin: 0 15px;
+}
+
+.background-care{
+    background-image: url("./img/plant-wall-background.avif");
+    height: 500px;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headings{
+    text-align: center;
+}
+
+.problem-intro{
+    display: flex;
+    align-items: center;
+}
+
+#problem-span{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#problems-image{
+    height: 500px;
+    border: 10px solid white;
+    border-radius: 20px;
+    position: relative;
+    bottom: 60px;
+}
+
+h1 .problem, h2 .problem, h3 .problem{
+    color: var(--darkgrey);
+    margin: 5px 0;
+}
+
+h1 .problem{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 40px 0;
+}
+
+#title{
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--darkgrey);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+h3 .problem{
+    font-size: 20px;
+}
+
+.problem-text{
+    color: var(--darkgrey);
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.problem-text, #problems-image{
+    margin: 0 100px;
+}
+
+#problem-text-paragraph{
+    line-height: 20px;
+    font-size: 16px;
+    color:var(--darkgrey);
+    font-size: 14px;
 }
