@@ -17,5 +17,64 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <section class="contact">
+                <div class="main-heading">
+                    <h3 class="issue-text">Have a Different Issue?</h3>
+                </div>
+                <div class="physical-details">
+                    <div class="detail email">
+                        <i class="fa-regular fa-envelope fa-md" style="color: #ffffff;"></i>
+                        <div class="text">
+                            <h4>Email Address</h4>
+                            <p>nikolayenia.ana@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="detail phone">
+                        <i class="fa-solid fa-phone fa-md" style="color: #ffffff;"></i>
+                        <div class="text">
+                            <h4>Phone Number</h4>
+                            <p>+353 851125923</p>
+                        </div>
+                    </div>
+                    <div class="detail location">
+                        <i class="fa-solid fa-location-dot fa-md" style="color: #ffffff;"></i>
+                        <div class="text">
+                            <h4>Location</h4>
+                            <div class="ireland">
+                                <p>Ireland</p>
+                                <div class="flag">
+                                    <div class="stripe stripe-1"></div>
+                                    <div class="stripe stripe-2"></div>
+                                    <div class="stripe stripe-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form method="post" id="issue">
+                        <div class="general-inputs">
+                            <label for="name">Name <span class="question-form">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+                            <label for="email">Email <span class="question-form">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br>
+                        </div>
+                        <div class="textarea-message">
+                            <label for="message">Message <span class="question-form">*</span></label>
+                            <textarea name="message" id="message" cols="30" rows="10" required placeholder="Describe your issue..."></textarea>
+                        </div>
+                        <div class="terms">
+                            <label for="terms" class="terms-label">I agree to the <a href="https://media.makeameme.org/created/gotcha-1e0c00b0e0.jpg" class="terms-conditions">terms & conditions</a></label>
+                            <input type="checkbox" class="terms" name="terms" id="terms">
+                        </div>
+                        <div class="toggle">
+                            <label for="toggle-button" class="toggle-button-label">Send</label>
+                            <input type="submit" id="toggle-button" style="display:none;"> <!--work around for form toggle but abuses semantic html/css - not recommended and should use button element instead MAKE SUBMIT TYPEOF-->
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
