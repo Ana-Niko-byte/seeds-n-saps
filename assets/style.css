@@ -60,7 +60,7 @@ a:active{
 
 .header{
     background-color: var(--darkgreen);
-    background-image: url("../photos_1/cacti_cover.webp");
+    background-image: url("./img/cacti-cover.webp");
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +124,7 @@ h2{
 }
 
 .about_background{
-    background-image: url("../photos_1/full-green.avif");
+    background-image: url("./img/full-green.avif");
     border-bottom: 5px solid black;
     border-top: 5px solid black;
     background-position: center;
