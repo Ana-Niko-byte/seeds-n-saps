@@ -11,6 +11,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* start of common styling across all pages  */
+
 nav{
     background-color: rgb(0, 0, 0, 0.9);
     height: 70px;
@@ -71,168 +73,6 @@ a:active{
     flex-flow: column nowrap;
 }
 
-.blur{
-    height: 310px;
-    width: 700px;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 15px;
-    transition: height width 0.3s;
-}
-
-.main_text{
-    transform: translateY(-100px);
-    color: rgb(71, 71, 71);
-    text-align: center;
-    position: absolute;
-}
-
-h1{
-    margin: 20px 0;
-    font-size: 50px;
-}
-
-h2{
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-.socials{
-    position: absolute;
-    right: 0;
-    margin-top: 20px;
-}
-
-.fa-brands{
-    padding: 20px;
-    transition: filter 0.1s ease;
-}
-
-.fa-instagram{
-    margin-right: 30px;
-}
-
-.fa-brands:hover{
-    filter: invert(0.4);
-}
-
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 80px 0;
-}
-
-.about_background{
-    background-image: url("./img/full-green.avif");
-    background-color: var(--darkgreen);
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
-    background-position: center;
-    height: 500px;
-    width: 100%;
-    position: relative;
-}
-
-.about-over{
-    position: absolute;
-    width: 100%;
-    height: 630px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.about_me-text{
-    max-width: 350px;
-    text-align: left;
-    line-height: 25px;
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-h3{
-    color: white;
-    font-size: 45px;
-}
-
-#plant_head{
-    height: 600px;
-    border: 15px solid white;
-    border-radius: 25px;
-}
-
-.plants{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.card-container{
-    width: 180px;
-    height: 250px;
-    perspective: 1000px;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin: 35px;
-}
-
-.plant-card{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.card-container:hover .plant-card{
-    transform: rotateY(180deg);
-}
-
-.card-front, .card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-back{
-    height: 100%;
-    width: 100%;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    background-color: rgb(106, 124, 106);
-    color: white;
-    text-align: center;
-    transform: rotateY(180deg);
-    border-radius: 15px;
-}
-
-.plant_image{
-    background-color: var(--darkgreen);
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-}
-
-h4{
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-p.plants{
-    font-size: 12px;
-    margin: 15px;
-}
-
 footer{
     background-color: var(--darkgrey);
     color: white;
@@ -272,6 +112,181 @@ footer{
 
 .links a{
     margin: 0 15px;
+}
+
+/* end of common styling across all pages  */
+
+/* start of index header styling  */
+.blur{
+    height: 310px;
+    width: 700px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    transition: height width 0.3s;
+}
+
+.main_text{
+    transform: translateY(-100px);
+    color: rgb(71, 71, 71);
+    text-align: center;
+    position: absolute;
+}
+
+.main_text h1{
+    margin: 20px 0;
+    font-size: 50px;
+}
+
+.main_text h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--darkgrey);
+    text-transform: capitalize;
+}
+
+/* end of index header styling + start of socials styling */
+
+.socials{
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+
+.fa-brands{
+    padding: 20px;
+    transition: filter 0.1s ease;
+}
+
+.fa-instagram{
+    margin-right: 40px;
+}
+
+a .fa-brands:hover i{
+    filter: invert(0.4);   /* changes black color of icons to a lighter grey */
+}
+
+/* end of socials styling + start of about section */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.about-background{
+    background-image: url("./img/full-green.avif");
+    background-color: var(--darkgreen);
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.about-over{
+    position: absolute;
+    width: 100%;
+    height: 630px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-me-text p{
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 350px;
+    text-align: left;
+    line-height: 25px;
+    color: white;
+    font-size: 17px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h3{
+    color: white;
+    font-size: 45px;
+}
+
+#plant-head{
+    height: 600px;
+    border: 15px solid white;
+    border-radius: 25px;
+}
+
+/* end of about section styling + start of plant cards */
+
+.plants{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card-container{
+    width: 180px;
+    height: 250px;
+    perspective: 1000px;  /* the card is positioned 1000px away from the user, gives 3D effect */
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 35px;
+}
+
+.plant-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .plant-card{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back{
+    height: 100%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: rgb(106, 124, 106);
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.plant-image{
+    background-color: var(--darkgreen);
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-back h4{
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+}
+
+p.plants{
+    font-size: 12px;
+    margin: 15px;
 }
 
 .background-care{
@@ -420,8 +435,6 @@ article{
 
 .card_front, .card-back{
     position: absolute;
-    width: 200px;
-    height: 100%;
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
@@ -429,8 +442,6 @@ article{
 }
 
 .card-back{
-    height: 100%;
-    width: 200px;
     flex-flow: column nowrap;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.8);
