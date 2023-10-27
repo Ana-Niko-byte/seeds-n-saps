@@ -710,3 +710,67 @@ i{
     flex-flow: row nowrap;
     align-items: center;
 }
+
+.form-container{
+    padding: 30px;
+    padding-left: 100px;
+    background-color: var(--lightgreen);
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    left: 70px;
+}
+
+label{
+    color: white;
+    font-size: 0.7rem;
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.question-form{
+    color: red;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 0.6rem;
+    outline: none;
+    border: 2px solid var(--lightgreen);
+}
+
+input:active, input:focus{
+    border: 2px solid var(--darkgreen);
+}
+
+.general-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea-message{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+textarea{
+    outline: none;
+    font-size: 0.7rem;
+    padding: 5px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.terms{
+    text-align: center;
+}
+
+.terms-label{
+    font-size: 0.6rem;
+    padding: 5px;
+}
+
+.terms-label a{
+    color: var(--darkgrey);
+}
