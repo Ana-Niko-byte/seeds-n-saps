@@ -443,3 +443,17 @@ article{
     width: 200px;
     border-radius: 15px;
 }
+
+h2{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+p{
+    font-size: 10px;
+    line-height: 15px;
+    color: white;
+    margin: 10px;
+}
