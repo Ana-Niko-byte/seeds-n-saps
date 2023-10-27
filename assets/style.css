@@ -231,3 +231,44 @@ p.plants{
     font-size: 12px;
     margin: 15px;
 }
+
+footer{
+    background-color: var(--darkgrey);
+    color: white;
+    padding: 30px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.footer-links{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials-footer a{
+    margin: 0 15px;
+    transition: filter 0.1s ease;
+}
+
+.socials-footer a:hover{
+    filter: invert(0.4);
+}
+
+.links{
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.links a{
+    margin: 0 15px;
+}
