@@ -492,3 +492,37 @@ i{
     transform: scale(1.2);
     margin: 0 4px;
 }
+
+.contact, .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    flex-flow: column nowrap;
+}
+
+.toggle-button-label{
+    background-color: var(--darkgreen);
+    color: white;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#toggle-button{
+    position: absolute;
+}
+
+.toggle-button-label:hover{
+    background-color: rgb(32, 60, 32);
+}
+
+.toggle-button-label:active{
+    background-color: rgb(23, 43, 23);
+    font-size: 14px;
+}
