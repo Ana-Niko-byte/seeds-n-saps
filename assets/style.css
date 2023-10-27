@@ -4,3 +4,9 @@
     --lightgrey: rgb(209, 209, 209);
     --darkgrey: rgb(34, 34, 34);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
