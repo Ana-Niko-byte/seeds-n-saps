@@ -457,3 +457,38 @@ p{
     color: white;
     margin: 10px;
 }
+
+span{
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: var(--darkgreen);
+}
+
+.question-form{
+    color: rgb(172, 0, 0);
+}
+
+.icon_container{
+    width: 100%;
+}
+
+.fa-percent, .fa-circle-exclamation{
+    transform: scale(0.6);
+}
+
+.humidity i, .poor_soil i, .low-flow i, .waterlogged i{
+    position: absolute;
+}
+
+.low-flow {
+    margin-left: 22px;
+}
+
+.humidity{
+    margin-left: 6px;
+}
+
+i{
+    transform: scale(1.2);
+    margin: 0 4px;
+}
