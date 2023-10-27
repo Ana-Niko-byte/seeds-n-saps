@@ -359,3 +359,87 @@ h3 .problem{
     flex-flow: row wrap;
     justify-content: space-around;
 }
+
+article{
+    min-width: 300px;
+    margin: 30px 0;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.individual-container{
+    perspective: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommendation{
+    margin-left: 20px;
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.recommendation h3{
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.recommendation p{
+    font-size: 0.8rem;
+    line-height: 18px;
+}
+
+.card-container_problem{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.individual-container:hover .card-container_problem{
+    transform: rotateY(-180deg);
+}
+
+.card_front, .card-back{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back{
+    height: 100%;
+    width: 200px;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--darkgrey);
+    text-align: center;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.card_front img{
+    background-color: var(--lightgreen);
+    height: 100%;
+    width: 200px;
+    border-radius: 15px;
+}
