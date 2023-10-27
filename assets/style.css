@@ -609,3 +609,12 @@ input:focus, textarea:focus{
     border-color: rgb(235, 235, 235);
     transform: translateX(50px), translateY(35px);
 }
+
+.terms-conditions{
+    color: var(--darkgreen);
+    transition: color 0.2s ease;
+}
+
+.terms-conditions:hover{
+    color: var(--lightgreen);
+}
