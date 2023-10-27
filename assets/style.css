@@ -618,3 +618,9 @@ input:focus, textarea:focus{
 .terms-conditions:hover{
     color: var(--lightgreen);
 }
+
+#toggle-button-send:checked + .form-container{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
