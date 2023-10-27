@@ -18,3 +18,42 @@ nav{
     z-index: 99;
     width: 100%;
 }
+
+.logo{
+    max-width: 50px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+ul{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+li:nth-child(3){
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.1s ease;
+}
+
+a:hover{
+    color: var(--darkgreen);
+}
+
+a:active{
+    color: var(--lightgreen);
+}
