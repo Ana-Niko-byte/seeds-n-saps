@@ -390,30 +390,7 @@ article{
     border: 2px solid white;
     padding: 30px;
     display: flex;
-    justify-content: space-around;
-}
-
-.recommendation{
-    margin-left: 20px;
-    text-align: center;
-    max-width: 300px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-}
-
-.recommendation h3{
-    font-weight: 900;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-.recommendation p{
-    font-size: 0.8rem;
-    line-height: 18px;
+    position: relative;
 }
 
 .problem-article{
@@ -424,20 +401,6 @@ article{
 .problem-article:hover{
     background-color: rgba(9, 25, 1, 0.4);
     border: 5px solid var(--darkgreen);
-}
-
-.card-container-problem{
-    border: 2px solid transparent;  /* removes visual of border set in .card-container on homepage */
-}
-
-.plant-card-problem{
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-.card-back-problem{
-    background-color: rgba(0, 0, 0, 0.8);
-    color: var(--darkgrey);
 }
 
 span{
@@ -473,6 +436,39 @@ span{
 i{
     transform: scale(1.2);
     margin: 0 4px;
+}
+
+.cards-wrapper{
+    height: 100%;
+    border: 2px solid purple;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.card{
+    height: 200px;
+    width: 150px;
+    border: 2px solid red;
+    position: absolute;
+}
+
+.card-front-problem{
+    border: 1px solid green;
+    z-index: 3;
+    background-color: var(--darkgreen);
+}
+
+.card-back-problem{
+    z-index: 1;
+    background-color: var(--lightgreen);
+}
+
+article:hover .card-front-problem{
+    transform: translateX(-150px);
+}
+
+.card-middle-problem:hover ~ .card-back-problem{
+    transform: translateX(150px);
 }
 
 /* end of problem card styling */
