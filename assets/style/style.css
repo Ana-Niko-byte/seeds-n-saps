@@ -207,12 +207,12 @@ a .fa-brands:hover i{
     border-radius: 15px;
 }
 
-h3{
+h3 .about-me-text{
     color: white;
     font-size: 45px;
 }
 
-#plant-head{
+.plant-head{
     height: 600px;
     border: 15px solid white;
     border-radius: 25px;
@@ -289,7 +289,9 @@ p.plants{
     margin: 15px;
 }
 
-.background-care{
+/* end of plant cards styling. overrides for second page below */
+/* start of header styling in care.html */
+.care{
     background-image: url("../img/plant-wall-background.avif");
     background-color: var(--lightgreen);
     height: 500px;
@@ -304,23 +306,21 @@ p.plants{
     text-align: center;
 }
 
+/* end of header styling + problem intro styling beginning */
+
 .problem-intro{
     display: flex;
+    flex-flow: row-reverse wrap;
     align-items: center;
-}
-
-#problem-span{
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#problems-image{
+    justify-content: center;
     height: 500px;
-    border: 10px solid white;
-    border-radius: 20px;
+}
+
+#roots-problem-image{
     position: relative;
     bottom: 60px;
+    height: 600px;
+    border: 10px solid white;
 }
 
 h1 .problem, h2 .problem, h3 .problem{
@@ -354,17 +354,19 @@ h3 .problem{
     align-items: center;
     position: relative;
     bottom: 50px;
-}
-
-.problem-text, #problems-image{
     margin: 0 100px;
 }
 
-#problem-text-paragraph{
+#problem-span{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.problem-text p{
     line-height: 20px;
-    font-size: 16px;
     color:var(--darkgrey);
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .common_problems{
