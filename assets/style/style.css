@@ -291,6 +291,7 @@ p.plants{
 
 /* end of plant cards styling. overrides for second page below */
 /* start of header styling in care.html */
+
 .care{
     background-image: url("../img/plant-wall-background.avif");
     background-color: var(--lightgreen);
@@ -369,6 +370,8 @@ h3 .problem{
     font-size: 1rem;
 }
 
+/* plant cards style overrides */
+
 .common_problems{
     background-image: url("../img/long-grass-background.jpeg");
     background-color: var(--lightgreen);
@@ -413,7 +416,15 @@ article{
     line-height: 18px;
 }
 
-/* plant cards style overrides */
+.problem-article{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.problem-article:hover{
+    background-color: rgba(9, 25, 1, 0.4);
+    border: 5px solid var(--darkgreen);
+}
 
 .card-container-problem{
     border: 2px solid transparent;  /* removes visual of border set in .card-container on homepage */
@@ -427,20 +438,6 @@ article{
 .card-back-problem{
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--darkgrey);
-}
-
-h2{
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: white;
-}
-
-p{
-    font-size: 10px;
-    line-height: 15px;
-    color: white;
-    margin: 10px;
 }
 
 span{
@@ -478,7 +475,9 @@ i{
     margin: 0 4px;
 }
 
-.contact, .button-container{
+/* end of problem card styling */
+
+/* .contact, .button-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,7 +563,7 @@ label{
 }
 
 input, textarea{
-    width: calc(100% - 12px);    /* so input doesn't overflow */
+    width: calc(100% - 12px);    so input doesn't overflow
     margin: 5px 0px;
     padding: 6px;
     font-size: 0.6rem;
@@ -576,7 +575,7 @@ input, textarea{
 }
 
 textarea{
-    resize: vertical;  /* only allows resizing in y-axis */
+    resize: vertical;
     margin-bottom: 20px;
 }
 
@@ -608,7 +607,7 @@ input:focus, textarea:focus{
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-}
+} */
 
 .main-heading{
     position: absolute;
@@ -626,7 +625,7 @@ input:focus, textarea:focus{
     justify-content: center;
     flex-flow: row wrap;
     position: relative;
-    background-image: url("../photos_1/sarah-dorweiler-2s9aHF4eCjI-unsplash.jpg");
+    background-image: url("../img/sarah-dorweiler-unsplash.jpg");
     background-size: cover;
     background-position: center;
     height: 900px;
