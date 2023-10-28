@@ -61,7 +61,7 @@ a:active{
 }
 
 .header{
-    background-image: url("./img/cacti-cover.webp");
+    background-image: url("../img/cacti-cover.webp");
     background-color: var(--darkgreen);
     height: 700px;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ a .fa-brands:hover i{
 }
 
 .about-background{
-    background-image: url("./img/full-green.avif");
+    background-image: url("../img/full-green.avif");
     background-color: var(--darkgreen);
     border-bottom: 5px solid black;
     border-top: 5px solid black;
@@ -276,7 +276,6 @@ h3{
     height: 100%;
     width: 100%;
     border-radius: 15px;
-    border: 2px solid red;
 }
 
 .card-back h4{
@@ -291,7 +290,7 @@ p.plants{
 }
 
 .background-care{
-    background-image: url("./img/plant-wall-background.avif");
+    background-image: url("../img/plant-wall-background.avif");
     background-color: var(--lightgreen);
     height: 500px;
     background-size: cover;
@@ -369,7 +368,7 @@ h3 .problem{
 }
 
 .common_problems{
-    background-image: url("./img/long-grass-background.jpeg");
+    background-image: url("../img/long-grass-background.jpeg");
     background-color: var(--lightgreen);
     background-position: center;
     background-size: cover;
@@ -387,14 +386,6 @@ article{
     padding: 30px;
     display: flex;
     justify-content: space-around;
-}
-
-.individual-container{
-    perspective: 1000px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 .recommendation{
@@ -420,43 +411,20 @@ article{
     line-height: 18px;
 }
 
-.card-container_problem{
-    position: relative;
-    width: 200px;
-    height: 250px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+/* plant cards style overrides */
+
+.card-container-problem{
+    border: 2px solid transparent;  /* removes visual of border set in .card-container on homepage */
+}
+
+.plant-card-problem{
     border: 2px solid white;
     border-radius: 10px;
 }
 
-.individual-container:hover .card-container_problem{
-    transform: rotateY(-180deg);
-}
-
-.card_front, .card-back{
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-back{
-    flex-flow: column nowrap;
-    justify-content: space-around;
+.card-back-problem{
     background-color: rgba(0, 0, 0, 0.8);
     color: var(--darkgrey);
-    text-align: center;
-    transform: rotateY(180deg);
-    border-radius: 15px;
-}
-
-.card_front img{
-    background-color: var(--lightgreen);
-    height: 100%;
-    width: 200px;
-    border-radius: 15px;
 }
 
 h2{
