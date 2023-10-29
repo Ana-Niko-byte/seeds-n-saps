@@ -448,14 +448,18 @@ i{
 .card{
     height: 200px;
     width: 150px;
-    border: 2px solid red;
     position: absolute;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
 }
 
 .card-front-problem{
-    border: 1px solid green;
     z-index: 3;
-    background-color: var(--darkgreen);
+    background-color: lightseagreen;
+}
+
+.card-middle-problem{
+    z-index: 2;
 }
 
 .card-back-problem{
