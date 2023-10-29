@@ -641,35 +641,55 @@ input:focus, textarea:focus{
     pointer-events: auto;
 } */
 
-.main-heading{
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 55px;
-    width: 100%;
-    top: 180px;
+/* start of contact page styling */
+
+.contact-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contact{
-    padding: 40px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    position: relative;
-    background-image: url("../img/sarah-dorweiler-unsplash.jpg");
+    background-image: url("../img/monstera-plant-vertical.avif");
+    background-color: var(--darkgreen);
     background-size: cover;
     background-position: center;
-    height: 900px;
+    border-right: 5px solid black;
+    height: 800px;
+    width: 800px;
+}
+
+.main-heading{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    top: 150px;
+    left: 50px;
+}
+
+.contact-fields{
+    margin-right: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 .physical-details{
-    min-width: 250px;
-    background-color: rgb(85, 112, 85);
-    border-radius: 5px;
+    width: 300px;
+    padding: 20px 10px;
+    background-color: var(--darkgreen);
+    border-radius: 10px;
     position: absolute;
-    left: 400px;
     z-index: 99;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    right: 670px;
 }
 
 .detail{
@@ -730,8 +750,6 @@ i{
     background-color: var(--lightgreen);
     border-radius: 10px;
     width: 400px;
-    position: relative;
-    left: 70px;
 }
 
 label{
