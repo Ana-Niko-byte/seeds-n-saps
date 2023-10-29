@@ -424,7 +424,6 @@ article{
     background-color: rgba(9, 25, 1, 0.4);
     border: 3px solid var(--darkgreen);
     width: 450px;
-    transform: scale(1.15);
 }
 
 .problem-card-container{
@@ -532,9 +531,9 @@ article:hover .card-back-problem{
     border-radius: 10px;
     text-align: center;
     color: white;
-    font-size: 3rem;
+    font-size: 2.2rem;
     top: 150px;
-    left: 50px;
+    left: 100px;
 }
 
 .contact-fields{
@@ -619,7 +618,7 @@ article:hover .card-back-problem{
     border: 5px solid rgb(140, 159, 140);
     border-radius: 10px;
     width: 450px;
-    transition: transform 0.3s;
+    transition: transform 0.4s, box-shadow 0.4s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
