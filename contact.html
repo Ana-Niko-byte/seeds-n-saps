@@ -25,22 +25,22 @@
             </section>
             <section class="contact-fields">
                 <div class="physical-details">
-                    <div class="detail email">
-                        <i class="fa-regular fa-envelope fa-md" style="color: #ffffff;"></i>
+                    <div class="detail email-address">
+                        <i class="fa-regular fa-envelope fa-md"></i>
                         <div class="text">
                             <h4 class="email-heading">Email Address</h4>
                             <p class="email-paragraph">nikolayenia.ana@gmail.com</p>
                         </div>
                     </div>
                     <div class="detail phone">
-                        <i class="fa-solid fa-phone fa-md" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-phone fa-md"></i>
                         <div class="text">
                             <h4 class="phone-heading">Phone Number</h4>
                             <p class="phone-number">+353 851125923</p>
                         </div>
                     </div>
                     <div class="detail location">
-                        <i class="fa-solid fa-location-dot fa-md" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-location-dot fa-md"></i>
                         <div class="text">
                             <h4 class="location-heading">Location</h4>
                             <div class="ireland">
@@ -57,22 +57,25 @@
                 <div class="form-container">
                     <form method="post" id="issue">
                         <div class="general-inputs">
-                            <label for="name">Name <span class="question-form">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required><br>
-                            <label for="email">Email <span class="question-form">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br>
+                            <div class="name">
+                                <label for="name">Name <span>*</span></label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+                            </div>
+                            <div class="email">
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br>
+                            </div>
                         </div>
                         <div class="textarea-message">
-                            <label for="message">Message <span class="question-form">*</span></label>
+                            <label for="message">Message <span>*</span></label>
                             <textarea name="message" id="message" cols="30" rows="10" required placeholder="Describe your issue..."></textarea>
                         </div>
                         <div class="terms">
                             <label for="terms" class="terms-label">I agree to the <a href="https://media.makeameme.org/created/gotcha-1e0c00b0e0.jpg" class="terms-conditions">terms & conditions</a></label>
-                            <input type="checkbox" class="terms" name="terms" id="terms">
+                            <input type="checkbox" class="terms" name="terms" id="terms" required>
                         </div>
-                        <div class="toggle">
-                            <label for="toggle-button" class="toggle-button-label">Send</label>
-                            <input type="submit" id="toggle-button" style="display:none;"> <!--work around for form toggle but abuses semantic html/css - not recommended and should use button element instead MAKE SUBMIT TYPEOF-->
+                        <div class="contact-button">
+                            <button type="submit">Send</button>
                         </div>
                     </form>
                 </div>
