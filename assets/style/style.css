@@ -152,20 +152,6 @@ footer{
     right: 0;
     margin-top: 20px;
 }
-
-.fa-brands{
-    padding: 20px;
-    transition: filter 0.1s ease;
-}
-
-.fa-instagram{
-    margin-right: 40px;
-}
-
-a .fa-brands:hover i{
-    filter: invert(0.4);   /* changes black color of icons to a lighter grey */
-}
-
 /* end of socials styling + start of about section */
 
 .about{
