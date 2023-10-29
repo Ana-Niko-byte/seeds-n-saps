@@ -384,23 +384,29 @@ h3 .problem{
 }
 
 article{
-    min-width: 300px;
     margin: 30px 0;
     border-radius: 15px;
     border: 2px solid white;
     padding: 30px;
-    display: flex;
-    position: relative;
+    height: 200px;
 }
 
 .problem-article{
     background-color: rgba(0, 0, 0, 0.5);
     border: 5px solid rgb(0, 0, 0);
+    width: 150px; /* setting explicit width so transition on width works smoothly */
+    transition: width 0.4s ease;
 }
 
 .problem-article:hover{
     background-color: rgba(9, 25, 1, 0.4);
     border: 5px solid var(--darkgreen);
+    width: 450px;
+}
+
+.problem-card-container{
+    display: flex;
+    justify-content: center;
 }
 
 span{
@@ -451,6 +457,7 @@ i{
     position: absolute;
     border-radius: 5px;
     transition: transform 0.4s ease;
+    text-align: center;
 }
 
 .card-front-problem{
@@ -471,10 +478,14 @@ article:hover .card-front-problem{
     transform: translateX(-150px);
 }
 
-.card-middle-problem:hover ~ .card-back-problem{
+article:hover .card-back-problem{
     transform: translateX(150px);
 }
 
+.plant-image{
+    height: 100%;
+    width: 100%;
+}
 /* end of problem card styling */
 
 /* .contact, .button-container{
