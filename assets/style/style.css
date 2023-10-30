@@ -396,7 +396,6 @@ article{
     margin: 30px 0;
     border-radius: 15px;
     border: 2px solid white;
-    padding: 20px;
     height: 200px;
 }
 
@@ -407,8 +406,6 @@ article{
 }
 
 .problem-article:hover{
-    background-color: rgba(9, 25, 1, 0.4);
-    border: 3px solid var(--darkgreen);
     width: 450px;
 }
 
@@ -420,15 +417,11 @@ article{
 span{
     font-weight: 600;
     letter-spacing: 0.4px;
-    color: var(--darkgreen);
+    color: var(--lightgreen);
 }
 
 .icon_container{
     width: 100%;
-}
-
-.fa-percent, .fa-circle-exclamation{
-    transform: scale(0.6);
 }
 
 .humidity i, .poor_soil i, .low-flow i, .waterlogged i{
@@ -446,6 +439,22 @@ span{
 i{
     transform: scale(1.2);
     margin: 0 4px;
+}
+
+.fa-solid{
+    color: white;
+}
+
+.fa-percent, .fa-circle-exclamation{
+    color: black;
+}
+
+.fa-percent{
+    transform: scale(0.75);
+}
+
+.fa-circle-exclamation{
+    transform: scale(0.85);
 }
 
 .cards-wrapper{
@@ -466,7 +475,19 @@ i{
 
 .card-front-problem{
     z-index: 3;
-    background-color: lightseagreen;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-title-heading {
+    font-size: 0.9rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.problem-paragraph{
+    font-size: 11px;
+    padding: 10px;
+    color: white;
 }
 
 .card-middle-problem{
@@ -475,7 +496,13 @@ i{
 
 .card-back-problem{
     z-index: 1;
-    background-color: var(--lightgreen);
+    background-color: darkolivegreen;
+}
+
+.card-front-problem, .card-back-problem{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
 }
 
 article:hover .card-front-problem{
