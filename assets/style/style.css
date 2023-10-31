@@ -844,6 +844,19 @@ textarea{
     }
     /* end of media query styles for home page + footer across all pages */
     /* start of care page media query styling */
+
+    .care{
+        align-items: flex-end;
+    }
+
+    .headings{
+        margin-bottom: 150px;
+    }
+
+    #title{
+        font-size: 1.6rem;
+    }
+
     .problem-intro{
         height: 700px;
         display: flex;
