@@ -800,6 +800,10 @@ textarea{
 
 @media all and (max-width: 550px){
     /* start of media query styles for home page */
+
+    ul{ 
+       justify-content: center;
+    }
     .main-text h1{
         font-size: 1.7rem;
     }
