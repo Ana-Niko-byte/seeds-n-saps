@@ -324,13 +324,13 @@ button:active{
     flex-flow: row-reverse wrap;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 450px;
 }
 
-#roots-problem-image{
+.plant-head-care{
     position: relative;
     bottom: 60px;
-    height: 600px;
+    height: 550px;
     border: 10px solid white;
 }
 
@@ -390,6 +390,13 @@ h3 .problem{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.article-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 article{
@@ -716,6 +723,12 @@ textarea{
     margin-right: 70px;
 }
 
+@media all and (max-width:1450px){
+    .problem-article{
+        margin: 0 60px;
+    }
+}
+
 @media all and (max-width:1100px){
     .about{
         margin: 0;
@@ -736,6 +749,10 @@ textarea{
         max-height: 300px;
     }
 
+    #roots-problem-image{
+        height: 500px;
+    }
+
     .about-me-text{
         font-size: 1.8rem;
     }
@@ -747,9 +764,41 @@ textarea{
         font-size: 0.9rem;
         line-height: 1.2rem;
     }
+
+    .problem-intro{
+        margin-top: 100px;
+    }
+
+    .problem-text{
+        text-align: center;
+    }
+
+    #problem-span{
+        font-size: 1.4rem;
+    }
+
+    .problem-text p{
+        font-size: 0.9rem;
+        width: 250px;
+        margin: 10px;
+    }
+
+    .article-container{
+        flex-flow: column nowrap;
+    }
 }
 
-@media all and (max-width: 450px){
+@media all and (max-width:900px){
+    .common_problems{
+        flex-flow: column nowrap;
+    }
+
+    .problem-article{
+        margin: 20px 0;
+    }
+}
+
+@media all and (max-width: 550px){
     /* start of media query styles for home page */
     .main-text h1{
         font-size: 1.7rem;
@@ -797,24 +846,32 @@ textarea{
     /* start of care page media query styling */
     .problem-intro{
         height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
     }
 
     .plant-head-care{
         margin-bottom: 20px;
-
+        height: 500px;
     }
 
-    .problem-text{
-        text-align: center;
+    .problem-article:hover{
+        height: 600px;
+        width: 150px;
     }
 
-    #problem-span{
-        font-size: 1.4rem;
+    article:hover .card-middle-problem{
+        transform: translateY(0px);
+        margin-top: 200px;
     }
 
-    .problem-text p{
-        font-size: 0.9rem;
-        width: 250px;
-        margin: 10px;
+    article:hover .card-front-problem{
+        transform: translateX(0);
+    }
+    
+    article:hover .card-back-problem{
+        transform: translateY(400px);
     }
 }
