@@ -19,6 +19,34 @@
         </header>
         <main class="contact-page">
             <section class="contact-fields">
+                <div class="contact-title-header">
+                    <h3 class="issue-text">Have a Different Issue?</h3>
+                </div>
+                <div class="form-container">
+                    <form method="post" id="issue">
+                        <div class="general-inputs">
+                            <div class="name">
+                                <label for="name">Name <span>*</span></label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+                            </div>
+                            <div class="email">
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br>
+                            </div>
+                        </div>
+                        <div class="textarea-message">
+                            <label for="message">Message <span>*</span></label>
+                            <textarea name="message" id="message" cols="30" rows="10" required placeholder="Describe your issue..."></textarea>
+                        </div>
+                        <div class="terms">
+                            <label for="terms" class="terms-label">I agree to the <a href="https://media.makeameme.org/created/gotcha-1e0c00b0e0.jpg" class="terms-conditions">terms & conditions</a></label>
+                            <input type="checkbox" class="terms" name="terms" id="terms" required>
+                        </div>
+                        <div class="contact-button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
                 <div class="physical-details">
                     <div class="detail location">
                         <i class="fa-solid fa-location-dot fa-md"></i>
@@ -48,34 +76,6 @@
                             <p class="phone-number">+353 851125923</p>
                         </div>
                     </div>
-                </div>
-                <div class="form-container">
-                    <form method="post" id="issue">
-                        <div class="general-inputs">
-                            <div class="name">
-                                <label for="name">Name <span>*</span></label>
-                                <input type="text" id="name" name="name" placeholder="John Doe" required><br>
-                            </div>
-                            <div class="email">
-                                <label for="email">Email <span>*</span></label>
-                                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br>
-                            </div>
-                        </div>
-                        <div class="textarea-message">
-                            <label for="message">Message <span>*</span></label>
-                            <textarea name="message" id="message" cols="30" rows="10" required placeholder="Describe your issue..."></textarea>
-                        </div>
-                        <div class="terms">
-                            <label for="terms" class="terms-label">I agree to the <a href="https://media.makeameme.org/created/gotcha-1e0c00b0e0.jpg" class="terms-conditions">terms & conditions</a></label>
-                            <input type="checkbox" class="terms" name="terms" id="terms" required>
-                        </div>
-                        <div class="contact-button">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="contact-title-header">
-                    <h3 class="issue-text">Have a Different Issue?</h3>
                 </div>
             </section>
         </main>
