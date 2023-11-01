@@ -119,7 +119,6 @@ footer{
 }
 
 /* end of common styling across all pages  */
-
 /* start of index header styling  */
 .blur{
     height: 310px;
@@ -153,8 +152,23 @@ footer{
 
 .socials{
     position: absolute;
+    z-index: 99;
     right: 0;
     margin-top: 20px;
+}
+
+.intro-socials-instagram{
+    padding-right: 30px;
+}
+
+.socials i{
+    color: var(--darkgrey);
+    margin: 20px;
+    transition: color 0.2s;
+}
+
+.socials i:hover{
+    filter: invert(0.4);
 }
 /* end of socials styling + start of about section */
 
@@ -328,13 +342,13 @@ button:active{
     flex-flow: row-reverse wrap;
     align-items: center;
     justify-content: center;
-    height: 450px;
+    height: 420px;
 }
 
 .plant-head-care{
     position: relative;
-    bottom: 60px;
-    height: 550px;
+    bottom: 50px;
+    height: 500px;
     border: 10px solid white;
 }
 
@@ -390,30 +404,29 @@ h3 .problem{
     background-color: var(--lightgreen);
     background-position: center;
     background-size: cover;
-    padding: 50px 30px;
+    padding: 100px 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .article-container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
 }
 
 article{
-    margin: 30px 0;
+    margin: 0 15px;
     border-radius: 15px;
-    border: 2px solid white;
     height: 200px;
 }
 
 .problem-article{
     border: 5px solid transparent;
     width: 150px; /* setting explicit width so transition on width works smoothly */
-    transition: width 0.4s ease, transform 0.4s ease;
+    transition: width 0.4s ease, transform 0.4s ease, height 0.4s ease;
 }
 
 .problem-article:hover{
@@ -453,7 +466,9 @@ i{
 }
 
 .fa-solid{
-    color: white;
+    color: rgb(228, 228, 228);
+    scale: 0.8;
+    margin-bottom: 5px;
 }
 
 .fa-percent, .fa-circle-exclamation{
@@ -470,7 +485,6 @@ i{
 
 .cards-wrapper{
     height: 100%;
-    border: 2px solid purple;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -492,7 +506,7 @@ i{
 
 .card-title-heading {
     font-size: 0.9rem;
-    color: white;
+    color: rgb(229, 229, 229);
     text-transform: uppercase;
     margin-top: 10px;
 }
@@ -504,7 +518,7 @@ i{
 .problem-paragraph{
     font-size: 11px;
     padding: 10px;
-    color: white;
+    color: rgb(228, 228, 228);
 }
 
 .card-middle-problem{
@@ -556,7 +570,7 @@ article:hover .card-back-problem{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 92%;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
     padding: 30px;
@@ -724,12 +738,6 @@ textarea{
 }
 /* end of form styling on contact.html + start of media queries*/
 
-@media all and (max-width:1450px){
-    .problem-article{
-        margin: 0 60px;
-    }
-}
-
 @media all and (max-width:1100px){
     .about{
         margin: 0;
@@ -751,7 +759,7 @@ textarea{
     }
 
     #roots-problem-image{
-        height: 500px;
+        height: 450px;
     }
 
     .about-me-text{
@@ -768,6 +776,7 @@ textarea{
 
     .problem-intro{
         margin-top: 100px;
+        height: 600px;
     }
 
     .problem-text{
@@ -785,7 +794,11 @@ textarea{
     }
 
     .article-container{
-        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+
+    .problem-intro{
+        height: 400px;
     }
 }
 
@@ -795,7 +808,21 @@ textarea{
     }
 
     .problem-article{
-        margin: 20px 0;
+        margin: 30px 0;
+    }
+
+    .article-container{
+        flex-direction: column;
+    }
+
+    .problem-intro{
+        flex-flow: column nowrap;
+        height: 700px;
+    }
+
+    .plant-head-care{
+        margin-bottom: 20px;
+        height: 500px;
     }
 }
 
@@ -872,16 +899,9 @@ textarea{
     }
 
     .problem-intro{
-        height: 700px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px;
-    }
-
-    .plant-head-care{
-        margin-bottom: 20px;
-        height: 500px;
     }
 
     .problem-article:hover{
@@ -889,17 +909,16 @@ textarea{
         width: 150px;
     }
 
-    article:hover .card-middle-problem{
-        transform: translateY(0px);
-        margin-top: 200px;
+    article:hover .card-front-problem{
+        transform: translateY(-200px) translateX(0);
     }
 
-    article:hover .card-front-problem{
-        transform: translateX(0);
+    article:hover .card-middle-problem{
+        transform: translateY(0);
     }
     
     article:hover .card-back-problem{
-        transform: translateY(400px);
+        transform: translateY(200px);
     }
     /* end of care page styling + start of contact page styling */
 
