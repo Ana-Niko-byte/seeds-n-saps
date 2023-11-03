@@ -181,7 +181,7 @@ footer{
 
 .about-background{
     background-image: url("../img/full-green.avif");
-    background-color: var(--darkgreen);
+    background-color: var(--lightgreen);
     border-bottom: 5px solid black;
     border-top: 5px solid black;
     background-position: center;
@@ -268,7 +268,7 @@ footer{
     width: 100%;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-color: rgb(106, 124, 106);
+    background-color: darkolivegreen;
     color: white;
     text-align: center;
     transform: rotateY(180deg);
