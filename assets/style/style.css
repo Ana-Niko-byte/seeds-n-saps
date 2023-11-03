@@ -399,7 +399,7 @@ h3 .problem{
 }
 /* plant cards style overrides */
 
-.common_problems{
+.common-problems{
     background-image: url("../img/long-grass-background.jpeg");
     background-color: var(--lightgreen);
     background-position: center;

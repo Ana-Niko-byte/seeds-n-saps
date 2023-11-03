@@ -224,5 +224,14 @@ To work on this, I needed to:
 # H3 Known Bugs & Fixes 
 I made sure to debug common and often missed bugs like links to socials and other websites. Everything was working correctly, but this is a good habit to have for common debugging. 
 
-I also ran a contrast test using Color Contrast Accessibility Validator to see if my text and its backgrounds were legible. The results I received were a little confusing, as some of thr text was read on completely different background colours than what they are actually placed on, and as such I decided to disregard the score I got. (See image below from the validator and the actual site). 
+I also ran a contrast test using Color Contrast Accessibility Validator to see if my text and its backgrounds were legible. The results I received were a little confusing, as some of the text was read on completely different background colours than what they are actually placed on. It was only after running the site through WAVE (another accessibility checker) did I realise that the contrast problems were based on the text color and the background color property set under the images, rather than on the image color and the text. 
 
+** image 
+
+I fixed the colours by adding lighter colours to the backgrounds and a set var(--darkgrey) value to text colours, as specified in the root properties of my CSS stylesheet. I achieved a full score on legibility accessibility. 
+
+** image
+
+HTML validation was done using the W3C Markup Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them.
+
+**images
