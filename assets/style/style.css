@@ -126,7 +126,7 @@ footer{
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
-    transition: height width 0.3s;
+    transition: height 0.3s;
 }
 
 .main-text{
@@ -467,7 +467,6 @@ i{
 
 .fa-solid{
     color: rgb(228, 228, 228);
-    scale: 0.8;
     margin-bottom: 5px;
 }
 
@@ -691,7 +690,7 @@ label{
 
 .general-inputs{
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
 }
 
@@ -864,7 +863,7 @@ textarea{
 
     .footer-links{
         display: flex;
-        flex-grow: column nowrap;
+        flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
     }
