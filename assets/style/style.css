@@ -223,6 +223,22 @@ footer{
 }
 
 /* end of about section styling + start of plant cards */
+.tip{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+
+}
+
+.tip h4{
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
+
+.tip p{
+    font-size: 0.9rem;
+}
 
 .plants{
     display: flex;
@@ -386,16 +402,19 @@ h3 .problem{
     margin: 0 100px;
 }
 
-#problem-span{
-    font-size: 2rem;
+.problem-text-heading{
+    font-size: 1.6rem;
+    padding-bottom: 30px;
     text-transform: uppercase;
     font-weight: 600;
+    color: var(--darkgreen);
 }
 
 .problem-text p{
     line-height: 20px;
     color:var(--darkgrey);
     font-size: 1rem;
+    text-align: center;
 }
 /* plant cards style overrides */
 
@@ -547,7 +566,41 @@ article:hover .card-back-problem{
     height: 100%;
     width: 100%;
 }
-/* end of problem card styling */
+/* end of problem card styling + start of contact button styling
+on care page */
+
+.contact-button-care{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.button-care-heading{
+    font-size: 1.8rem;
+    color: var(--darkgreen);
+    padding-top: 35px;
+}
+.contact-form-care{
+    display: flex;
+    justify-content: center;
+}
+.contact-page-care{
+    background-color: var(--darkgreen);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 30px 0;
+    padding: 10px 20px;
+}
+
+.contact-page-care:hover{
+    background-color: rgb(36, 66, 36);
+}
+
+.contact-page-care:active{
+    border: 2px solid white;
+    box-shadow: 0px 5px 5px grey;
+}
+/* end of contact button styling on care page */
 /* start of contact page styling */
 .contact-page{
     display: flex;
@@ -619,6 +672,8 @@ article:hover .card-back-problem{
     font-size: 1rem;
 }
 
+/* start of irish flag styles for flag divs */
+
 .flag{
     width: 15px;
     height: 10px;
@@ -649,7 +704,7 @@ article:hover .card-back-problem{
     flex-flow: row nowrap;
     align-items: center;
 }
-/* start of form styling on contact.html */
+/* emd of flag styles + start of form styling on contact.html */
 
 .form-container{
     padding: 30px;
@@ -738,9 +793,6 @@ textarea{
 /* end of form styling on contact.html + start of media queries*/
 
 @media all and (max-width:1100px){
-    .about{
-        margin: 0;
-    }
 
     .about-background{
         height: 800px;
@@ -858,7 +910,8 @@ textarea{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 20px;
+        margin-top: 20px;
+        top: 30px;
     }
 
     .footer-links{
