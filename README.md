@@ -161,15 +161,14 @@ The website's responsive design was made possible using the following technologi
 * GitHub - For code storage,version control and deployment
 * Git - for  commiting through terminal and pushing to Github for storage. 
 * VSC - The IDE I developed the project in.
-* Balsamiq/Sketches - for a clear understanding of the structure I wanted my website to follow. 
+* Sketches - for a clear understanding of the structure I wanted my website to follow. For future projects, I will likely use something like Balsamiq. 
 * Grammarly - Because even as a native speaker, my English is all over the gaff. 
 * Unicorn Revealer -  
 * Tiny.png - for compressing my images (to improve performance of my website). 
 * Color Contrast Accessibility Validator - check legibility of my text on different backgrounds for better accessibility. 
 * W3C Markup Validation Service - to validate my HTML for potential errors. 
-* W3C CSS Validation Service - to validate my CSS code. 
-* Freeformatter CSS Beautify - to ensure I formatted my CSS correctly. 
-* Freeformatter HTML Beautify - to ensure I formatted my HTML correctly. 
+* W3C CSS Validation Service - to validate my CSS code for potential errors. 
+* Freeformatter CSS Beautify - to ensure I formatted my CSS correctly - I didn't copy and paste anything from here as the results looked the same as what I had already written but this served as a good check. 
 * AmIResponsive - to create the responsive image. 
 
 # H1 Testing & DeBugging
@@ -234,4 +233,13 @@ I fixed the colours by adding lighter colours to the backgrounds and a set var(-
 
 HTML validation was done using the W3C Markup Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them.
 
+The first image is of the errors, the second is of a second iteration after the errors were addressed. 
+
 **images
+
+CSS Validation was done using the W3C CSS Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them. Most of them were due to using arrows to go through the automatic list of properties, instead of typing the entire property. i.e. - flex-grow: row wrap; instead of flex-flow: row wrap; 
+
+The first and second images are of the errors, the third is of a second iteration after the errors were addressed. 
+
+**images
+
