@@ -1,8 +1,10 @@
 # Saplings Care Guide
-[link]()
+[website link](https://ana-niko-byte.github.io/seeds-n-saps/)
 ---
 
 This website was created as a guide for new plant-parents, or for those who are looking at getting into plant care. This website was created purely for educational purposes. 
+
+![my website](docs/images/am-i-responsive.png)
 
 ## Business/Social Goals: 
 
@@ -131,6 +133,15 @@ This website is fully responsive, designed with a mobile-first approach.
 ### Contrast
 Text on any image background is given a color and opacity (either black or white, at 30-40% transparency). This gives the text a sufficient backdrop for legibility and contrast, while allowing the _background-image_ to seep through and create a more visually-appealing design. Text on a black background is given an off-white _color_, and text on a whte background is given a _color_ value of darkgrey (as set in the root colours in CSS), for improved legibility and contrast.  
 
+Root colours: 
+
+:root{
+    --lightgreen: rgb(176, 227, 176);
+    --darkgreen: rgb(55, 103, 55);
+    --lightgrey: rgb(209, 209, 209);
+    --darkgrey: rgb(34, 34, 34);
+}
+
 ### Navbar
 The navbar is consistent throughout the whole website, with a logo and three simple links to the other pages. On all screens over 550px (made larger as phone screens seem to be growing wider and wider these days), the navbar links are positioned in the middle of the screen, else in the far right corner with a set _margin_ value to offset it from the screen edge. 
 
@@ -208,6 +219,11 @@ This is where the icons come into place - as a first time visitor they may not b
 
 * As a recurring visitor, I want to be able to send a message in case I have a problem that is not listed and be assured that my message has reached the author. 
 
+![problem card design](docs/images/problem-card-design.png)
+On hover, the card opens up fully to show all information. 
+
+Note: The text on these cards will likely change as it is still preliminary on this card. 
+
 A contact button is provided at the bottom of the second page, and as a separate third page for any queries the user may have.
 
 #### Contact Page 
@@ -217,6 +233,15 @@ The contact page required minimal debugging and was done by testing whether the 
 
 This is where tools like Lighthouse (extension), HTML and CSS validators, and simple responsiveness testing using the Firefox developer environment (CTRL + M) came into play. 
 
+The project was initially built in a separate repository (the link to which will be provided below), but after my mentor informed me that my directory structure and commits needed major reformatting (and that I had been accidentally committing using my secondary account which I have since deleted), I decided to migrate all of my code into a new repository, with a more coherent directory structure, cleaner commits, and better code.
+
+The link to this repository can be found here : [repository link](https://github.com/Ana-Niko-byte/CodeInstitute_1)
+
+#### Build Process
+I build using what I like to call 'box frames' - essentially wrapping the element I am styling with a _border_ of 1px solid red. These borders are all removed after I finish with that element's styling. While admittedly messing-looking, this allows me to see the full box model of my element and apply styles accordingly and carefully. Sometimes I do this to multiple elements at a time, as shown in the image below: 
+![box frame process](docs/images/card-images-debugging.png)
+
+#### Accessibility and Performance
 ![first lighthouse report](docs/images/lighthouse-one.png)
 While the scores from the Lighthouse report are quite decent, there was still room for improvement with regards to the overall performance of the website.
 
@@ -250,11 +275,22 @@ The first and second images show the CSS errors, the third is of a second iterat
 I made sure to debug common and often missed bugs like links to socials and other websites. Everything was working correctly, but this is a good habit to have for common debugging. 
 
 #### Color Contrast Accessibility Validator
+
+##### Root Colours
+Shown are the root colours used across the website: 
+
+:root{
+    --lightgreen: rgb(176, 227, 176);
+    --darkgreen: rgb(55, 103, 55);
+    --lightgrey: rgb(209, 209, 209);
+    --darkgrey: rgb(34, 34, 34);
+}
+
 I also ran a contrast test using Color Contrast Accessibility Validator to see if my text and its backgrounds were legible. The results I received were a little confusing, as some of the text was read on completely different background colours than what they are actually placed on. It was only after running the site through WAVE (another accessibility checker) did I realise that the contrast problems were based on the text color and the background color property set under the images, rather than on the image color and the text. 
 
 ![color validator](docs/images/bad-readability.png)
+Here you can see a very clear contrast problem, which only worsens as the screen gets smaller. I solved this by adding a black backdrop with a set opacity so that the image didn't fully disappear and the backgrounds could work harmoniously together. This is shown in the image below.
 ![color validator](docs/images/contrast-fixed.png)
-Here you can see a very clear contrast problem, which only worsens as the screen gets smaller. I solved this by adding a black backdrop with a set opacity so that the image didn't fully disappear and the backgrounds could work harmoniously together.
 
 ![color validator](docs/images/okay-legibility.png)
 This image was also detected as poor legibility on WAVE but I didn't initially understand why until I hovered over the heading and saw that the dark grey 'plan b' background color I set in case the image failed showed very low contrast and would result in poor legibility. The same problem extended to the subheading below the main heading. See image below. 
@@ -299,10 +335,13 @@ Cloning a repository essentially means downloading a copy of your repository tha
 ---
 
 The code written in this project was cross checked on WS3 and validated using the servcies described in the Technologies section. 
-All images were taken from Pexels and Unsplash. 
-Content on plant care was generated mostly from personal experience (as I've been caring for plants since I was a child), but I double checked my informaton on the following websites:
+
+All images were taken from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/). 
+
+Content on plant care was generated mostly from personal experience (as I've been caring for plants since I was a child), but I double checked my informaton on the following websites to make sure it was correct:
 
 [SaferBrand](https://www.saferbrand.com/articles/leaves-foliage-problems)
+
 [Better Homes & Gardens](https://www.bhg.com/gardening/houseplants/care/why-are-my-houseplants-leaves-turning-brown-on-the-tips/)
 
 

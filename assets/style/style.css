@@ -854,7 +854,7 @@ textarea{
 }
 
 @media all and (max-width:900px){
-    .common_problems{
+    .common-problems{
         flex-flow: column nowrap;
     }
 
