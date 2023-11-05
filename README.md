@@ -161,6 +161,8 @@ On the home page, the cards provide an interactive way of introducing beginners 
 
 On the care page, the structure of the cards is similar, but instead has three cards positioned one on top of the other, each of which (except the middle) slide in opposite directions to reveal all three. Depending on the screen size, these cards either slide out on the X-axis (if the screen is over 900px), or on the Y-axis (if it is smaller). This ensures all content is kept legible and visible at all times. Also, since phone content tends to be oriented long-side-vertically, this kind of design made more sense. While I had considered re-using the same functionality from the home-page cards, I needed to display information in a more concise and sectioned manner.  
 
+![problem cards on care page](docs/images/problem-card-design.png)
+
 ### Contact Form
 This form is the object of focus on the third page. This is here for users to submit their queries and concerns to the author. It is strutured with basic user-side validation using relevant and correct input types and the _required_ attribute. I had considered using HTML pattern regex, but it seemed unnecessary as all of the validation was handled by in-built functionality. This was tested several times with different inputs. 
 
@@ -190,28 +192,40 @@ The website's responsive design was made possible using the following technologi
 ---
 ### Testing
 #### Home Page
-* (As a first-time visitor, I may be already intimidated by the idea of plant-care, and want to visit a website that is
+* As a first-time visitor, I may be already intimidated by the idea of plant-care, and want to visit a website that is
  easy to navigate, 
  easy to understand, 
- and attractive (and complies with a set colour scheme that adheres to a plant theme).)
+ and attractive (and complies with a set colour scheme that adheres to a plant theme).
+
+![top of home page](docs/images/top-of-home.png)
 
 Upon entering the website, the visitor is greeted with a minimalist header aesthetic - directing focus to the middle of the header where a reassuring heading - "complete care guide for beginners" - is placed. There is a simple mnavigation bar at the top of the page, which is immediately visible due to its contrasting background colour. 
 
 * As a first-time visitor, I want to be encouraged and inspired by the content on the website to buy my first plant (not necessarily from the links provided in the plant cards). 
 
-Further down the page, content is kept clean and concise, to make sure the visitor isn't distracted by anything unnecessary. The cards are made dynamic and interesting, following the volor scheme of the site and providing 1-2 quick sentences on why a specific plant is an ideal choice for a beginner or someone looking for something non-time-consuming. 
-
 * As a recurring visitor, I want to feel confident in that the information provided is from a reliable source. 
 
 The intro begins to build credibility to the author by introducing themselves, showing an image of them surrounded by plants, and mentioning growing up around houseplants. 
 
+![home intro design](docs/images/home-about.png)
+![card designs on home page](docs/images/home-cards.png)
+
+Further down the page, content is kept clean and concise, to make sure the visitor isn't distracted by anything unnecessary. The cards are made dynamic and interesting, following the color scheme of the site and providing 1-2 quick sentences on why a specific plant is an ideal choice for a beginner or someone looking for something non-time-consuming. 
+
+
 #### Care/Problems Page: 
 * As a first-time visitor, I want to find quick and concise guidance on problems I encounter as a first time plant parent. 
+
+![care intro design](docs/images/problem-about.png)
 
 The intro at the top of this page reassures users that experiencing difficulties in plant care is completely normal and not to worry, and then directs users further down the page to the cards. The cards near the bottom of the page are designed similarly to those on the home page, but required more information (thus the design change from flip to translate). 
 
 * As a first-time visitor, I want to know what is causing the problem and know how to avoid it. 
+
+![care cards design and functionality](docs/images/problem-card-design.png)
+
 The cards slide out with the first showing a heading describing the problem and the usual cause, the second an image of the problem (from Unsplash), and the third a 'quick fix' of the problem, written clearly and concisely. 
+Note: The text on these cards will likely change as it is still preliminary on this card. 
 
 * As a recurring visitor, I want to be able to recognise common denominators in plant problems and be able to avoid them as best practice. 
 
@@ -219,10 +233,8 @@ This is where the icons come into place - as a first time visitor they may not b
 
 * As a recurring visitor, I want to be able to send a message in case I have a problem that is not listed and be assured that my message has reached the author. 
 
-![problem card design](docs/images/problem-card-design.png)
-On hover, the card opens up fully to show all information. 
-
-Note: The text on these cards will likely change as it is still preliminary on this card. 
+![button on second page](docs/images/problem-card-design.png)
+![contact page](docs/images/contact-page.png)
 
 A contact button is provided at the bottom of the second page, and as a separate third page for any queries the user may have.
 
@@ -231,7 +243,9 @@ The contact page required minimal debugging and was done by testing whether the 
 
 ### DeBugging
 
-This is where tools like Lighthouse (extension), HTML and CSS validators, and simple responsiveness testing using the Firefox developer environment (CTRL + M) came into play. 
+This is where tools like Lighthouse (extension), HTML and CSS validators, and simple responsiveness testing using the Firefox developer environment (CTRL + Shift + M) came into play. 
+
+![firefox developer environment for responsive design](docs/images/developer-environment.png)
 
 The project was initially built in a separate repository (the link to which will be provided below), but after my mentor informed me that my directory structure and commits needed major reformatting (and that I had been accidentally committing using my secondary account which I have since deleted), I decided to migrate all of my code into a new repository, with a more coherent directory structure, cleaner commits, and better code.
 
@@ -251,6 +265,11 @@ To work on this, I needed to:
 * serve static assets with an efficient cache policy - I wasn't entirely sure what this meant so had to research it and add it to the site. 
 * ensure my links have discernible names for better accessibility - something I missed and added in later. 
 * ensure my images are displayed with the correct aspect ratio as the original image. 
+
+#### Image Size Reduction
+I needed to reduce the size of my images to improve website performance, user experience and website speed.
+
+![image file size savings after decompression](docs/images/image-compress.png)
 
 #### HTML Validator
 HTML validation was done using the W3C Markup Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them.
@@ -274,8 +293,6 @@ The first and second images show the CSS errors, the third is of a second iterat
 ### Known Bugs & Fixes 
 I made sure to debug common and often missed bugs like links to socials and other websites. Everything was working correctly, but this is a good habit to have for common debugging. 
 
-#### Color Contrast Accessibility Validator
-
 ##### Root Colours
 Shown are the root colours used across the website: 
 
@@ -286,6 +303,7 @@ Shown are the root colours used across the website:
     --darkgrey: rgb(34, 34, 34);
 }
 
+#### Color Contrast Accessibility Validator
 I also ran a contrast test using Color Contrast Accessibility Validator to see if my text and its backgrounds were legible. The results I received were a little confusing, as some of the text was read on completely different background colours than what they are actually placed on. It was only after running the site through WAVE (another accessibility checker) did I realise that the contrast problems were based on the text color and the background color property set under the images, rather than on the image color and the text. 
 
 ![color validator](docs/images/bad-readability.png)
@@ -343,8 +361,6 @@ Content on plant care was generated mostly from personal experience (as I've bee
 [SaferBrand](https://www.saferbrand.com/articles/leaves-foliage-problems)
 
 [Better Homes & Gardens](https://www.bhg.com/gardening/houseplants/care/why-are-my-houseplants-leaves-turning-brown-on-the-tips/)
-
-
 
 ## Acknowledgments
 ---

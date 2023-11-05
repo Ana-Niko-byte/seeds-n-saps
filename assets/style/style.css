@@ -529,14 +529,12 @@ i{
     margin-top: 10px;
 }
 
-.problem-paragraph-first{
-    background-color: rgba(19, 19, 19, 0.8);
-}
-
 .problem-paragraph{
     font-size: 11px;
     padding: 10px;
     color: rgb(228, 228, 228);
+    opacity: 0;
+    transition: opacity 0.4s;
 }
 
 .card-middle-problem{
@@ -554,8 +552,13 @@ i{
     justify-content: space-around;
 }
 
+article:hover .problem-paragraph{
+    opacity: 1;
+}
+
 article:hover .card-front-problem{
     transform: translateX(-150px);
+    background-color: rgba(19, 19, 19, 0.9)
 }
 
 article:hover .card-back-problem{
@@ -565,6 +568,14 @@ article:hover .card-back-problem{
 .plant-image{
     height: 100%;
     width: 100%;
+}
+
+.inline-span{
+    text-decoration: underline;
+}
+
+.inline-span:hover{
+    color: rgb(166, 166, 166);
 }
 /* end of problem card styling + start of contact button styling
 on care page */
