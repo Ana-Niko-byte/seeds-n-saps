@@ -162,6 +162,8 @@ On the home page, the cards provide an interactive way of introducing beginners 
 On the care page, the structure of the cards is similar, but instead has three cards positioned one on top of the other, each of which (except the middle) slide in opposite directions to reveal all three. Depending on the screen size, these cards either slide out on the X-axis (if the screen is over 900px), or on the Y-axis (if it is smaller). This ensures all content is kept legible and visible at all times. Also, since phone content tends to be oriented long-side-vertically, this kind of design made more sense. While I had considered re-using the same functionality from the home-page cards, I needed to display information in a more concise and sectioned manner.  
 
 ![problem cards on care page](docs/images/problem-card-design.png)
+![problem cards on phone screen](docs/images/phone-problem-cards.png)
+Links on these cards are underlined and send users to useful websites where they can purchase whatever they need to help them with their plant problem. 
 
 ### Contact Form
 This form is the object of focus on the third page. This is here for users to submit their queries and concerns to the author. It is strutured with basic user-side validation using relevant and correct input types and the _required_ attribute. I had considered using HTML pattern regex, but it seemed unnecessary as all of the validation was handled by in-built functionality. This was tested several times with different inputs. 
@@ -179,14 +181,13 @@ The website's responsive design was made possible using the following technologi
 * Git - for  commiting through terminal and pushing to Github for storage. 
 * VSC - The IDE I developed the project in.
 * Sketches - for a clear understanding of the structure I wanted my website to follow. For future projects, I will likely use something like Balsamiq. 
-* Grammarly - Because even as a native speaker, my English is all over the gaff. 
-* Unicorn Revealer -  
-* Tiny.png - for compressing my images (to improve performance of my website). 
+* Tinypng - for compressing my images (to improve performance of my website). 
 * Color Contrast Accessibility Validator - check legibility of my text on different backgrounds for better accessibility. 
 * W3C Markup Validation Service - to validate my HTML for potential errors. 
 * W3C CSS Validation Service - to validate my CSS code for potential errors. 
 * Freeformatter CSS Beautify - to ensure I formatted my CSS correctly - I didn't copy and paste anything from here as the results looked the same as what I had already written but this served as a good check. 
 * AmIResponsive - to create the responsive image. 
+* Looka.com - for logo ideas (Ai tool). 
 
 ## Testing & DeBugging
 ---
@@ -257,14 +258,18 @@ I build using what I like to call 'box frames' - essentially wrapping the elemen
 
 #### Accessibility and Performance
 ![first lighthouse report](docs/images/lighthouse-one.png)
-While the scores from the Lighthouse report are quite decent, there was still room for improvement with regards to the overall performance of the website.
+
+While the scores from the Lighthouse report are quite decent, there was still some major room for improvement with regards to the overall performance of the website.
 
 To work on this, I needed to: 
 * reduce the size of my images using Tiny.png without losing out on quality - there was a potential savings of 658KiB. 
 * explicitly use width and height attributes in my HTML for img instead of setting this using CSS - a classic example of just because my HTML and CSS validated as corrected, doesn't make it right or best practice. 
 * serve static assets with an efficient cache policy - I wasn't entirely sure what this meant so had to research it and add it to the site. 
 * ensure my links have discernible names for better accessibility - something I missed and added in later. 
-* ensure my images are displayed with the correct aspect ratio as the original image. 
+* ensure my images are displayed with the correct aspect ratio as the original image (although in some cases I decided to intentially overlook this as the image served the purpose I needed it for perfectly and the aspect ratio didn't look bad at all - for best practices, I will adhere to the image ratios in future projects). 
+* add a meta description for SEO
+
+![optimised website lighthouse report](docs/images/optimised-lighthouse.png)
 
 #### Image Size Reduction
 I needed to reduce the size of my images to improve website performance, user experience and website speed.

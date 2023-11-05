@@ -23,12 +23,13 @@ nav{
     position: absolute;
     z-index: 99;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo{
-    max-width: 50px;
-    position: absolute;
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 ul{
@@ -968,6 +969,11 @@ textarea{
     .problem-article:hover{
         height: 600px;
         width: 150px;
+    }
+
+    .problem-article:hover .card{
+        position: relative;
+        top: 50px;
     }
 
     article:hover .card-front-problem{
