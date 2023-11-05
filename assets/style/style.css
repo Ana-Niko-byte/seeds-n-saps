@@ -217,7 +217,6 @@ footer{
 }
 
 .plant-head{
-    height: 600px;
     border: 15px solid white;
     border-radius: 25px;
 }
@@ -364,7 +363,6 @@ button:active{
 .plant-head-care{
     position: relative;
     bottom: 50px;
-    height: 500px;
     border: 10px solid white;
 }
 
@@ -530,7 +528,7 @@ i{
 }
 
 .problem-paragraph{
-    font-size: 11px;
+    font-size: 12px;
     padding: 10px;
     color: rgb(228, 228, 228);
     opacity: 0;

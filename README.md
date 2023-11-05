@@ -1,5 +1,5 @@
 # Saplings Care Guide
-[website link](https://ana-niko-byte.github.io/seeds-n-saps/)
+[My Website](https://ana-niko-byte.github.io/seeds-n-saps/)
 ---
 
 This website was created as a guide for new plant-parents, or for those who are looking at getting into plant care. This website was created purely for educational purposes. 
@@ -233,7 +233,7 @@ This is where the icons come into place - as a first time visitor they may not b
 
 * As a recurring visitor, I want to be able to send a message in case I have a problem that is not listed and be assured that my message has reached the author. 
 
-![button on second page](docs/images/problem-card-design.png)
+![button on second page](docs/images/problem-cards.png)
 ![contact page](docs/images/contact-page.png)
 
 A contact button is provided at the bottom of the second page, and as a separate third page for any queries the user may have.
