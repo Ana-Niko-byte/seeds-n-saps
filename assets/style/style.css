@@ -464,13 +464,14 @@ span{
 
 .icon_container{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .humidity i, .poor_soil i, .low-flow i, .waterlogged i{
     position: absolute;
 }
 
-.low-flow {
+.low-flow{
     margin-left: 22px;
 }
 
@@ -484,12 +485,12 @@ i{
 }
 
 .fa-solid{
-    color: rgb(228, 228, 228);
+    color: var(--lightgreen);
     margin-bottom: 5px;
 }
 
 .fa-percent, .fa-circle-exclamation{
-    color: black;
+    color: var(--darkgreen);
 }
 
 .fa-percent{
@@ -901,7 +902,19 @@ even though the styles worked fine in their original place in the Firefox develo
     /* start of media query styles for home page */
 
     nav{
-        height: 50px;
+        height: 100px;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo{
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    .logo img{
+        transform: scale(0.9);
     }
 
     ul{ 
@@ -977,13 +990,8 @@ even though the styles worked fine in their original place in the Firefox develo
     }
 
     .problem-article:hover{
-        height: 600px;
+        height: 400px;
         width: 150px;
-    }
-
-    .problem-article:hover .card{
-        position: relative;
-        top: 50px;
     }
 
     article:hover .card-front-problem{
@@ -993,9 +1001,13 @@ even though the styles worked fine in their original place in the Firefox develo
     article:hover .card-middle-problem{
         transform: translateY(0);
     }
-    
+
     article:hover .card-back-problem{
         transform: translateY(200px);
+    }
+
+    .plant-image{
+        width: 150px;
     }
     /* end of care page styling + start of contact page styling */
 
