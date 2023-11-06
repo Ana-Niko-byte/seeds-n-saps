@@ -157,7 +157,7 @@ Both of these sections are designed to be simple and to-the-point.
 ### Cards
 The cards are key to the pages they are positioned on (home and care pages). 
 
-On the home page, the cards provide an interactive way of introducing beginners and intermediates to possible plant options, while also hiding text from immediate view. The click me! navigation indicator gives a hint to the cards' fuctionalities, which may not be immediately obvious to users. The functionality here is a flip on:hover effect, with the image of the plant on the front, and text with a link on the back. 
+On the home page, the cards provide an interactive way of introducing beginners and intermediates to possible plant options, while also hiding text from immediate view. The click me! navigation indicator gives a hint to the cards' fuctionalities, which may not be immediately obvious to users. The functionality here is a flip on:hover effect, with the image of the plant on the front, and text with a link for purchasing the plant.on the back. 
 
 On the care page, the structure of the cards is similar, but instead has three cards positioned one on top of the other, each of which (except the middle) slide in opposite directions to reveal all three. Depending on the screen size, these cards either slide out on the X-axis (if the screen is over 900px), or on the Y-axis (if it is smaller). This ensures all content is kept legible and visible at all times. Also, since phone content tends to be oriented long-side-vertically, this kind of design made more sense. While I had considered re-using the same functionality from the home-page cards, I needed to display information in a more concise and sectioned manner.  
 

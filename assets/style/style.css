@@ -309,6 +309,14 @@ p.plants{
     margin: 15px;
 }
 
+.home-link{
+    text-decoration: underline;
+}
+
+.home-link:hover{
+    color: rgb(188, 188, 188);
+}
+
 /* end of plant cards styling. overrides for second page below */
 /* start of common button styling */
 button{
@@ -817,6 +825,7 @@ textarea{
         border: 10px solid white;
         margin-top: 20px;
         max-height: 300px;
+        width: 200px;
     }
 
     #roots-problem-image{
@@ -862,7 +871,6 @@ textarea{
         height: 400px;
     }
 }
-
 @media all and (max-width:900px){
     .common-problems{
         flex-flow: column nowrap;
