@@ -309,14 +309,6 @@ p.plants{
     margin: 15px;
 }
 
-.home-link{
-    text-decoration: underline;
-}
-
-.home-link:hover{
-    color: rgb(188, 188, 188);
-}
-
 /* end of plant cards styling. overrides for second page below */
 /* start of common button styling */
 button{
@@ -808,7 +800,17 @@ textarea{
     text-align: center;
     margin-top: 20px;
 }
-/* end of form styling on contact.html + start of media queries*/
+/* end of form styling on contact.html + start of home page link styling*/
+/* the styling for these links was moved here as there seemed to be some overriding somewhere above in the file 
+even though the styles worked fine in their original place in the Firefox developer environment*/
+.home-link{
+    text-decoration: underline;
+}
+
+.home-link:hover{
+    color: rgb(188, 188, 188);
+}
+/* end of link styling + start of media queries */
 
 @media all and (max-width:1100px){
 
