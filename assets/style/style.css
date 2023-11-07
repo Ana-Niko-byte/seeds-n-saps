@@ -460,45 +460,6 @@ span{
     color: var(--lightgreen);
 }
 
-.icon_container{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.humidity i, .poor_soil i, .low-flow i, .waterlogged i{
-    position: absolute;
-}
-
-.low-flow{
-    margin-left: 22px;
-}
-
-.humidity{
-    margin-left: 6px;
-}
-
-i{
-    transform: scale(1.2);
-    margin: 0 4px;
-}
-
-.fa-solid{
-    color: var(--lightgreen);
-    margin-bottom: 5px;
-}
-
-.fa-percent, .fa-circle-exclamation{
-    color: var(--darkgreen);
-}
-
-.fa-percent{
-    transform: scale(0.75);
-}
-
-.fa-circle-exclamation{
-    transform: scale(0.85);
-}
-
 .cards-wrapper{
     height: 100%;
     display: flex;
@@ -524,7 +485,8 @@ i{
     font-size: 0.9rem;
     color: rgb(229, 229, 229);
     text-transform: uppercase;
-    margin-top: 10px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .problem-paragraph{
@@ -533,6 +495,7 @@ i{
     color: rgb(228, 228, 228);
     opacity: 0;
     transition: opacity 0.4s;
+    margin-bottom: 10px;
 }
 
 .card-middle-problem{
@@ -547,7 +510,7 @@ i{
 .card-front-problem, .card-back-problem{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 article:hover .problem-paragraph{
@@ -621,12 +584,11 @@ on care page */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
 }
 
 
 .contact-fields{
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

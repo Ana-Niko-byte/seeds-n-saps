@@ -182,6 +182,7 @@ The website's responsive design was made possible using the following technologi
 * VSC - The IDE I developed the project in.
 * Sketches - for a clear understanding of the structure I wanted my website to follow. For future projects, I will likely use something like Balsamiq. 
 * Tinypng - for compressing my images (to improve performance of my website). 
+* Compress JPEG Online - Tinypng couldn't handle one of my images as it was larger than 5mb. 
 * Color Contrast Accessibility Validator - check legibility of my text on different backgrounds for better accessibility. 
 * W3C Markup Validation Service - to validate my HTML for potential errors. 
 * W3C CSS Validation Service - to validate my CSS code for potential errors. 
@@ -225,12 +226,17 @@ The intro at the top of this page reassures users that experiencing difficulties
 
 ![care cards design and functionality](docs/images/problem-card-design.png)
 
-The cards slide out with the first showing a heading describing the problem and the usual cause, the second an image of the problem (from Unsplash), and the third a 'quick fix' of the problem, written clearly and concisely. 
-Note: The text on these cards will likely change as it is still preliminary on this card. 
+The three cards slide out on hover (in different directions depending on the screen size), with the first showing a heading describing the problem and a paragraph with the usual cause, the second an image of the problem (from Unsplash), and the third a 'quick fix' of the problem, written clearly and concisely. 
 
 * As a recurring visitor, I want to be able to recognise common denominators in plant problems and be able to avoid them as best practice. 
 
-This is where the icons come into place - as a first time visitor they may not be immediately recognisable (hence the text being at the top of the card), but as a recurring visitor who has likely looked through the cards simply for the dynamic layout, they may be able to quickly come to a conclusion on the possible cause simply from the icon. 
+The information on these cards is kept concise and general, as most often than not all plant problems come down to common denominators. The original design had icons on the front card as show below: 
+
+![cards with icons](docs/images/cards-w-icons.png)
+
+But after some careful consideration, I decided to remove them as I felt they clustered the card and didn't really reflect the theme of the problem, shown below is the new design: 
+
+![cards without icons](docs/images/cards-wout-icons.png)
 
 * As a recurring visitor, I want to be able to send a message in case I have a problem that is not listed and be assured that my message has reached the author. 
 
@@ -275,6 +281,8 @@ To work on this, I needed to:
 I needed to reduce the size of my images to improve website performance, user experience and website speed.
 
 ![image file size savings after decompression](docs/images/image-compress.png)
+
+All images that couldn't be compressed using Tinypng were compressed using Compress JPEGS
 
 #### HTML Validator
 HTML validation was done using the W3C Markup Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them.
