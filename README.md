@@ -236,7 +236,7 @@ The information on these cards is kept concise and general, as most often than n
 
 But after some careful consideration, I decided to remove them as I felt they clustered the card and didn't really reflect the theme of the problem, shown below is the new design: 
 
-![cards without icons](docs/images/cards-wout-icons.png)
+![cards without icons](docs/images/problem-cards.png)
 
 * As a recurring visitor, I want to be able to send a message in case I have a problem that is not listed and be assured that my message has reached the author. 
 
