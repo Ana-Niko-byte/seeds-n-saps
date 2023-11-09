@@ -28,9 +28,9 @@ Care/Problems Page:
 * As a first-time visitor, I want to know what is causing the problem and know how to avoid it. 
 * As a recurring visitor, I want to be able to recognise common denominators in plant problems and be able to avoid them as best practice. 
 * As a recurring visitor, I want to be able to send a message in case I have a problem that is not listed and be assured that my message has reached the author. 
+---
 
 ## Structure
----
 This website is composed of three separate pages, to break up the guide into digestible and easy-to-understand chunks.
 
 The structure of the website sections is as follows: 
@@ -59,9 +59,9 @@ The navigation and footer are common across all pages, interlinking the pages an
 The information is kept mostly graphical (images, icons), so that the websites is easy to understand and comparisons can be made visually. The website is designed to mitigate text information overload. 
 
 The final page is a simple message form where users can submit any questions or queries to the author. 
+---
 
 ## Scope of Website
----
 The scope of the website is as follows: 
 
 1. Header bar with navigation and logo. The navigation bar navigates to three different pages. 
@@ -71,9 +71,10 @@ The scope of the website is as follows:
 5. Links to local locations in Ireland where these plants may be purchased, and links where relevant to commercial products that can help with certain problems beginners may encounter. 
 6. A message form where users can submit their queries. 
 7. Links to social medias (in this case personal, but if the website was an actual blog, these would be affiliated plant accounts). 
+---
 
 ## Strategy
----
+
 In order to come up with the most appropriate structure for the website, I needed to define certain factors like audience, key information, and common things users will look out for in guides on plants. 
 
 Target Audience: 
@@ -93,9 +94,10 @@ Considerations for these users:
 This website is designed to be self-serviced, so that users can find information quickly and be able to use it as a guideline for plantcare. The contact form is there as a plan B and a fallback for any concerns outside of this website's scope. 
 
 As most content is viewed on phonescreens nowadays, creating a mobile-first application is a key consideration for the website's design. 
-
-## Skeleton Frames
 --- 
+
+## Wireframes
+
 ![first wireframe sketch](docs/images/wireframe-one.jpg)
 ![second wireframe sketch](docs/images/wireframe-two.jpg)
 
@@ -106,6 +108,7 @@ The main idea was to keep as much of the content as possible visual, so that the
 The header of the home page was changed slightly as I felt the visual appeal of the built product didn't reflect the same aesthetic value as what I imagined the wireframe to represent. As such, switching to the current header layout also allowed for a more fluid responsiveness and simplicity towards user experience.  
 
 The cards on the home and care pages provide an engaging and light solution to balancing the ratio of visual:text information. They are placed under the intro sections so users know exactly what the cards are for. 
+--- 
 
 ## Aesthetics
 1. Colour Palette
@@ -124,9 +127,9 @@ As Arial is a sans-serif font, it is considered significantly more legible than 
 Arial is a built-in CSS font, so nothing needed to be embedded/downloaded. 
 
 Alternatives considered: Verdana, Helvetica. 
+---
 
 ## Features
----
 ### Responsiveness
 This website is fully responsive, designed with a mobile-first approach. 
 
@@ -144,6 +147,9 @@ Root colours:
 
 ### Navbar
 The navbar is consistent throughout the whole website, with a logo and three simple links to the other pages. On all screens over 550px (made larger as phone screens seem to be growing wider and wider these days), the navbar links are positioned in the middle of the screen, else in the far right corner with a set _margin_ value to offset it from the screen edge. 
+
+![desktop navigation](docs/images/full-nav.png)
+![responsive phone navigation](docs/images/responsive-nav.png)
 
 ### About
 The about section is on two pages (first blocks of paragraph text on the home and care pages). 
@@ -167,9 +173,10 @@ Links on these cards are underlined and send users to useful websites where they
 
 ### Contact Form
 This form is the object of focus on the third page. This is here for users to submit their queries and concerns to the author. It is strutured with basic user-side validation using relevant and correct input types and the _required_ attribute. I had considered using HTML pattern regex, but it seemed unnecessary as all of the validation was handled by in-built functionality. This was tested several times with different inputs. 
+---
 
 ## Technologies 
----
+
 The website's responsive design was made possible using the following technologies: 
 
 * HTML5 - used for structuring and content
@@ -189,9 +196,10 @@ The website's responsive design was made possible using the following technologi
 * Freeformatter CSS Beautify - to ensure I formatted my CSS correctly - I didn't copy and paste anything from here as the results looked the same as what I had already written but this served as a good check. 
 * AmIResponsive - to create the responsive image. 
 * Looka.com - for logo ideas (Ai tool). 
+---
 
 ## Testing & DeBugging
----
+
 ### Testing
 #### Home Page
 * As a first-time visitor, I may be already intimidated by the idea of plant-care, and want to visit a website that is
@@ -287,12 +295,10 @@ All images that couldn't be compressed using Tinypng were compressed using Compr
 #### HTML Validator
 HTML validation was done using the W3C Markup Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them.
 
-The first image is of the errors, the rest are separate page iterations after the errors were addressed. 
+![HTML Validation Errors](docs/images/nonvalid-html.png)
+Errors highlighted in the validation report - all were based on an alt tag I mistakenly added to the anchor tags. 
 
-![HTML Validation Errors](docs/images/html-validate-errors.png)
 ![HTML Home Page Clean Validation](docs/images/html-clear.png)
-![HTML Care Page Clean Validation](docs/images/html-clear-one.png)
-![HTML Contact Page Clean Validation](docs/images/html-clear-two.png)
 
 #### CSS Validator
 CSS Validation was done using the W3C CSS Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them. Most of them were due to using arrows to go through the automatic list of properties, instead of typing the entire property. i.e. - flex-grow: row wrap; instead of flex-flow: row wrap; 
@@ -329,9 +335,10 @@ This image was also detected as poor legibility on WAVE but I didn't initially u
 To fix this, I added a much lighter background color of the root lightgreen set at the top of my CSS file. There were also some issues with some of the colours on the cards, which I immediately fixed and ended up with a more cohesive color scheme across the website. 
 ![color validator](docs/images/legibility-correct-contrast.png)
 I fixed all background colours, set var(--darkgrey) value to text colours, as specified in the root properties of my CSS stylesheet, and ran a second iteration of the colour accesibility validator and achieved a full score on legibility accessibility. 
+---
 
 ## Deployment
----
+
 The website is deployed on Gitpages through github, and is available for viewing in the link at the top of this README.md document. To deploy a github repository, follow the following steps: 
 
 1. Login to your github account
@@ -361,9 +368,9 @@ Cloning a repository essentially means downloading a copy of your repository tha
 4. Open a terminal within your VSC (or whatever IDE you choose to use). 
 5. In the terminal type 'git clone' and paste the URL. 
 6. Press Enter - you now have a cloned version of your github repository.
+---
 
 ## Credits
----
 
 The code written in this project was cross checked on WS3 and validated using the servcies described in the Technologies section. 
 
@@ -374,7 +381,8 @@ Content on plant care was generated mostly from personal experience (as I've bee
 [SaferBrand](https://www.saferbrand.com/articles/leaves-foliage-problems)
 
 [Better Homes & Gardens](https://www.bhg.com/gardening/houseplants/care/why-are-my-houseplants-leaves-turning-brown-on-the-tips/)
+---
 
 ## Acknowledgments
----
+
 This website was made possible through the help of my brilliant mentor, Harry Dhillon. A huge thank you to him for his support, guidance, and overall chill presence. 
