@@ -149,7 +149,7 @@ Root colours:
 The navbar is consistent throughout the whole website, with a logo and three simple links to the other pages. On all screens over 550px (made larger as phone screens seem to be growing wider and wider these days), the navbar links are positioned in the middle of the screen, else in the far right corner with a set _margin_ value to offset it from the screen edge. 
 
 ![desktop navigation](docs/images/full-nav.png)
-![responsive phone navigation](docs/images/responsive-nav.png)
+![responsive phone navigation](docs/images/responsive-navigation.png)
 
 ### About
 The about section is on two pages (first blocks of paragraph text on the home and care pages). 
@@ -169,6 +169,7 @@ On the care page, the structure of the cards is similar, but instead has three c
 
 ![problem cards on care page](docs/images/problem-card-design.png)
 ![problem cards on phone screen](docs/images/phone-problem-cards.png)
+
 Links on these cards are underlined and send users to useful websites where they can purchase whatever they need to help them with their plant problem. 
 
 ### Contact Form
@@ -298,7 +299,8 @@ HTML validation was done using the W3C Markup Validation Service. There were a f
 ![HTML Validation Errors](docs/images/nonvalid-html.png)
 Errors highlighted in the validation report - all were based on an alt tag I mistakenly added to the anchor tags. 
 
-![HTML Home Page Clean Validation](docs/images/html-clear.png)
+![HTML Validation Corrected](docs/images/valid-html.png)
+I corrcted the errors and received a fully validated HTML result. 
 
 #### CSS Validator
 CSS Validation was done using the W3C CSS Validation Service. There were a few issues found only on the second page, and were immediately addressed to resolve them. Most of them were due to using arrows to go through the automatic list of properties, instead of typing the entire property. i.e. - flex-grow: row wrap; instead of flex-flow: row wrap; 
